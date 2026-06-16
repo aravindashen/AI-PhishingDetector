@@ -60,16 +60,4 @@ def detect_indicators(text):
     return detected
 
 
-# ==========================
-# Testing
-# ==========================
 
-sample = """
-Verify your password immediately.
-Click here to login now.
-"""
-
-result = detect_indicators(sample.lower())
-
-print("Detected Indicators:")
-print(result)

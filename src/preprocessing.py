@@ -14,6 +14,3 @@ def clean_text(text):
     text = remove_special_characters(text)
     text = remove_extra_spaces(text)
     return text
-sample = "VERIFY     YOUR PASSWORD NOW!!!"
-
-print(clean_text(sample))

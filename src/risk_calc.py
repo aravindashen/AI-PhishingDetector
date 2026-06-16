@@ -24,16 +24,5 @@ def get_risk_level(score):
     else:
         return "Critical"
     
-sample_findings = [
-    ("immediately", "urgency"),
-    ("password", "credential"),
-    ("verify", "credential")
-]
 
-score = calculate_score(sample_findings)
-
-risk_level = get_risk_level(score)
-
-print("Risk Score:", score)
-print("Risk Level:", risk_level)
     

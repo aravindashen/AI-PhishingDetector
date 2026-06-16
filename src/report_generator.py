@@ -30,15 +30,3 @@ def generate_report(score, risk_level, findings):
     report += "=" * 40
 
     return report
-sample_findings = [
-    ("password", "credential"),
-    ("verify", "credential"),
-    ("immediately", "urgency")
-]
-
-score = 60
-risk_level = "High"
-
-report = generate_report(score, risk_level, sample_findings)
-
-print(report)
