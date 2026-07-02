@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🛡️ Phishing Guardian AI
+#  Phishing Guardian AI
 
-**Enterprise-style email threat analysis platform — detects phishing indicators, scores risk, and generates actionable security recommendations in real time.**
+**Email threat analysis platform — detects phishing indicators, scores risk, and generates actionable security recommendations in real time.**
 
-Built by [Aravind](https://github.com/aravindashen) · [`ARAVIND.SEC`](https://github.com/aravindashen)
+Built by Aravind
 
 </div>
 
