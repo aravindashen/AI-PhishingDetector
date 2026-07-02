@@ -1,3 +1,6 @@
+from recommendation_engine import get_recommendations
+
+
 def generate_report(score, risk_level, findings):
 
     report = "\n"
@@ -15,17 +18,12 @@ def generate_report(score, risk_level, findings):
 
     report += "\n"
 
-    if risk_level == "Low":
-        report += "Recommendation: Email appears safe.\n"
+    recommendations = get_recommendations(risk_level)
 
-    elif risk_level == "Medium":
-        report += "Recommendation: Verify sender before taking action.\n"
+    report += "Recommendations:\n"
 
-    elif risk_level == "High":
-        report += "Recommendation: Do not click links or share credentials.\n"
-
-    else:
-        report += "Recommendation: Treat this email as highly suspicious.\n"
+    for recommendation in recommendations:
+        report += f"- {recommendation}\n"
 
     report += "=" * 40
 

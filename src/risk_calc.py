@@ -1,28 +1,26 @@
-CATEGORY_SCORES = {
-    "urgency": 10,
-    "credential": 25,
-    "financial": 20,
-    "social_engineering": 15
-}
-def calculate_score(detected_indicators):
-    total_score = 0
+from risk_scores import RISK_SCORES
 
-    for keyword, category in detected_indicators:
-        total_score += CATEGORY_SCORES[category]
+def calculate_score(findings):
 
-    return total_score
+    score = 0
+
+    for keyword, category in findings:
+
+        score += RISK_SCORES.get(category, 0)
+
+    return score
+
+
 def get_risk_level(score):
-    if score <= 20:
+
+    if score == 0:
         return "Low"
 
-    elif score <= 50:
+    elif score <= 30:
         return "Medium"
 
-    elif score <= 100:
+    elif score <= 70:
         return "High"
 
     else:
         return "Critical"
-    
-
-    
