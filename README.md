@@ -95,11 +95,6 @@ cd AI-PhishingDetector
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the dashboard
-streamlit run src/app.py
-```
-
-The app will open at `http://localhost:8501`.
 
 ## Roadmap
 
