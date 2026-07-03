@@ -2,9 +2,9 @@
 
 # 🛡️ Phishing Guardian AI
 
-**Email threat analysis platform — detects phishing indicators, scores risk, and generates actionable security recommendations in real time.**
+**Enterprise-style email threat analysis platform — detects phishing indicators, scores risk, and generates actionable security recommendations in real time.**
 
-Built by Aravind
+Built by [Aravind](https://github.com/aravindashen) · [`ARAVIND.SEC`](https://github.com/aravindashen)
 
 **🚀 [Live Demo](https://phishing-guardian-ai.streamlit.app/)**
 
@@ -16,12 +16,12 @@ Built by Aravind
 
 <table>
 <tr>
-<td width="50%"><img src="docs/screenshots/dashboard-empty.png" alt="Dashboard"></td>
-<td width="50%"><img src="docs/screenshots/email-input.png" alt="Email Analysis Input"></td>
+<td width="50%"><img src="screenshots/dashboard-empty.png" alt="Dashboard"></td>
+<td width="50%"><img src="screenshots/email-input.png" alt="Email Analysis Input"></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/screenshots/analysis-results.png" alt="Threat Analysis Results"></td>
-<td width="50%"><img src="docs/screenshots/recommendations.png" alt="Security Recommendations"></td>
+<td width="50%"><img src="screenshots/analysis-threat.png" alt="Threat Analysis Results"></td>
+<td width="50%"><img src="screenshots/recommendations.png" alt="Security Recommendations"></td>
 </tr>
 </table>
 
@@ -95,6 +95,11 @@ cd AI-PhishingDetector
 # Install dependencies
 pip install -r requirements.txt
 
+# Run the dashboard
+streamlit run src/app.py
+```
+
+The app will open at `http://localhost:8501`.
 
 ## Roadmap
 
