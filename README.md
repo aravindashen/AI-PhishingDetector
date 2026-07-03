@@ -1,14 +1,29 @@
 <div align="center">
 
-#  Phishing Guardian AI
+# 🛡️ Phishing Guardian AI
 
 **Email threat analysis platform — detects phishing indicators, scores risk, and generates actionable security recommendations in real time.**
 
 Built by Aravind
 
+**🚀 [Live Demo](https://phishing-guardian-ai.streamlit.app/)**
+
 </div>
 
 ---
+
+## Screenshots
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/dashboard-empty.png" alt="Dashboard"></td>
+<td width="50%"><img src="docs/screenshots/email-input.png" alt="Email Analysis Input"></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/analysis-results.png" alt="Threat Analysis Results"></td>
+<td width="50%"><img src="docs/screenshots/recommendations.png" alt="Security Recommendations"></td>
+</tr>
+</table>
 
 ## Overview
 
@@ -84,7 +99,7 @@ pip install -r requirements.txt
 streamlit run src/app.py
 ```
 
-The app will open at `https://phishing-guardian-ai.streamlit.app.
+The app will open at `http://localhost:8501`.
 
 ## Roadmap
 
